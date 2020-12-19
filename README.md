@@ -2,6 +2,5 @@
 
 ## git commands:
 
-git clone
-
+git clone https://github.com/kwokkawai/demo-repo.git
  
