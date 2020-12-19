@@ -46,3 +46,63 @@ git pull origin main
 # delete branch
 git branch -d feature-1-1
 
+
+# Solving conflick
+git checkout -b quick-test
+
+##modify file on quick-test branch
+
+git status
+git diff
+git commit -am "update index.html"
+
+git checkout main
+
+##modify file on main branch
+
+git branch
+
+git checkout quick-test => error
+
+git commit -am "update master branch"
+
+git checkout quick-test
+
+git diff main
+
+git merge main => conflict 
+
+## edit the conflict files
+
+git diff
+
+git commit -am "update the conflict"
+
+
+#Make mistake, Undo Stage
+
+## modify the file
+
+git status
+
+git add index2.htmk
+
+git status
+
+git reset
+
+git commit -am "update status"
+
+git reset HEAD~1
+
+git log
+
+#git reset HASH
+git reset bc7346e4022413537ebf98584df7275d15525b48
+
+#all changes not just unstage but commit remove
+git reset --hard HEAD~1
+
+#fork
+
+
