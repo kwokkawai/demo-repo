@@ -80,6 +80,7 @@ git commit -am "update the conflict"
 
 
 #Make mistake, Undo Stage
+<<<<<<< HEAD
 
 ## modify the file
 
@@ -106,3 +107,5 @@ git reset --hard HEAD~1
 #fork
 
 
+=======
+>>>>>>> e439e2bd886743ad40d1a2a017a6e265512358c6
