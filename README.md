@@ -46,3 +46,37 @@ git pull origin main
 # delete branch
 git branch -d feature-1-1
 
+
+# Solving conflick
+git checkout -b quick-test
+
+##modify file on quick-test branch
+
+git status
+git diff
+git commit -am "update index.html"
+
+git checkout main
+
+##modify file on main branch
+
+git branch
+
+git checkout quick-test => error
+
+git commit -am "update master branch"
+
+git checkout quick-test
+
+git diff main
+
+git merge main => conflict 
+
+## edit the conflict files
+
+git diff
+
+git commit -am "update the conflict"
+
+
+#Make mistake, Undo Stage
