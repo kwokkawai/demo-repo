@@ -9,6 +9,6 @@ git add <filename>
 git commit -m "update"
 git push 
 
-SSH
+SSH https://help.github.com/en/github/aut...
 
 git pull 
